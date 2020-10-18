@@ -1,4 +1,5 @@
 # coding: utf-8
+# Some interactive code commented out to comply with the deliverable instructions. 
 from os import system, name   
 import numpy as np
 import pandas as pd
@@ -23,7 +24,7 @@ clear()
 
 if __name__ == '__main__':
     print("Task 1 | Assignment 1 | CSOE 17 - Big Data Analysis | Roll no : 114117098")
-    input("...| Press any key to Begin |...")
+    #input("...| Press any key to Begin |...")
     print("")
 
 #function to structure the data
@@ -66,7 +67,8 @@ print("\nPreparing Plot...")
 for i in range(12):
     sns.lmplot(y= test.columns[i], x= "quality", data = test)
 
-input("\n ♦ Plot Prepared! Press any key to show. ")   
+print("\n ♦ Plot Prepared!")   
+
 plt.show() 
 
 

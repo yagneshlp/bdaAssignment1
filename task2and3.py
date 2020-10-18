@@ -1,4 +1,5 @@
 # coding: utf-8
+# Some interactive code commented out to comply with the deliverable instructions. 
 from os import system, name   
 import numpy as np
 import pandas as pd
@@ -27,7 +28,7 @@ clear()
 
 if __name__ == '__main__':
     print("Task 2 and 3 | Assignment 1 | CSOE 17 - Big Data Analysis | Roll no : 114117098")
-    input("...| Press any key to Begin |...")
+    #input("...| Press any key to Begin |...")
     print("")
 
 #function to structure the data
@@ -116,24 +117,25 @@ mod_lin.fit(train_l.drop("quality", axis = 1), train_l["quality"])
 
 
 
-input("Press enter for Logistic Regression")
+#input("Press enter for Logistic Regression")
 print("Logistic Regression")
 mod_predict(test.drop("quality", axis = 1), test["quality"], mod_log, False)
 print("\n")
 
-input("Press enter for Linear Regression")
+#input("Press enter for Linear Regression")
 print("Linear Regression")
 mod_predict(test_l.drop("quality", axis = 1), test_l["quality"], mod_lin, True)
 print("\n")
 
-input("Press enter for SVM")
+#input("Press enter for SVM")
 print("SVM")
 mod_predict(test.drop("quality", axis = 1), test["quality"], mod_svc, False)
 print("\n")
 
-input("Press enter for Naive Bayes")
+#input("Press enter for Naive Bayes")
 print("Naive Bayes")
 mod_predict(test.drop("quality", axis = 1), test["quality"], mod_nav_bay, False)
 print("\n")
-result = pyfiglet.figlet_format("Thank you!") 
-print(result)
+
+#result = pyfiglet.figlet_format("Thank you!") 
+#print(result)
